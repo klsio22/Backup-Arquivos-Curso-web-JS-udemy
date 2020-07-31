@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+
+        <style>
+            body{
+                background: rgb(56, 56, 56);
+                color: #ffffff;
+            }
+
+            .caixa{
+                padding: 10px; 
+                margin: 20px;          
+            }
+
+
+            .listaObjetos{
+                font-size: 2em;
+                padding-right: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <script src="js/code.js"></script>
+
+        <div class="caixa">
+            <input id="objeto" type="text" size="25">
+            <button onclick="adicionarObjetos()">Adicionar</button>
+            <button onclick="ordenarObjetos()">Ordenar</button>
+            <button onclick="MostrarLista()">Mostrar</button>
+        </div>
+
+        <div>
+            <h1>Lista: </h1>
+            <p id="lista" class="listaObjetos">Objetos</p>
+        </div>
+
+    </body>
+</html>
