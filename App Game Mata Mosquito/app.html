@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>App Game</title>
+        <script src="js/jogo.js"></script>
+    </head>
+    <body onresize="ajustaTamanhoPalcoJogo()">
+        
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="img/coracao_cheio.png" alt="">
+                <img id="v2" src="img/coracao_cheio.png" alt="">
+                <img id="v3" src="img/coracao_cheio.png" alt="">
+            </div>
+
+            <div class="cronometro">
+                Tempo restante: <span id="tempo"></span>
+            </div>
+             
+        </div>
+
+        <script>
+            let criaMosquito = setInterval(function(){
+                posicaoMosquito()
+            }, tempoMosquito)
+        </script>
+ 
+    </body>
+</html>
